@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate domain-profile.json
-        uses: Dylanl37/ai-domain-data-validate@v0.1.0
+        uses: ai-domain-data/ai-domain-data-validate-action@v0.1.0
         with:
           path: domain-profile.json
 ```
