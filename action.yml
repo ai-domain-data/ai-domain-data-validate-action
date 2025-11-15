@@ -1,0 +1,14 @@
+name: "AI Domain Data Validate"
+description: "Validate domain-profile.json files against the AI Domain Data v0.1 schema using the aidd CLI."
+branding:
+  icon: "check"
+  color: "blue"
+inputs:
+  path:
+    description: "Path to the domain-profile.json file to validate."
+    required: false
+    default: "domain-profile.json"
+runs:
+  using: "node20"
+  main: "index.js"
+
