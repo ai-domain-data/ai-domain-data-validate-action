@@ -1,5 +1,5 @@
 name: "AI Domain Data Validate"
-description: "Validate domain-profile.json files against the AI Domain Data v0.1 schema using the aidd CLI."
+description: "Validate domain-profile.json files against the AI Domain Data v0.1.1 schema (backward-compatible with v0.1) using the aidd CLI."
 branding:
   icon: "check"
   color: "blue"
