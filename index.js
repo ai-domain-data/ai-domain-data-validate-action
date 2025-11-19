@@ -27,7 +27,7 @@ async function run() {
     core.endGroup();
 
     core.startGroup("AI Domain Data: Running aidd validate");
-    const exitCode = await exec.exec("npx", ["@ai-domain-data/cli@latest", "aidd", "validate", `--path=${absPath}`]);
+    const exitCode = await exec.exec("npx", ["@ai-domain-data/cli@latest", "validate", `--path=${absPath}`]);
     core.endGroup();
 
     if (exitCode !== 0) {
@@ -35,7 +35,7 @@ async function run() {
       return;
     }
 
-    core.info("✅ AI Domain Data validation passed (v0.1.1 schema, backward-compatible with v0.1).");
+    core.info("AI Domain Data validation passed (v0.1.1 schema, backward-compatible with v0.1).");
   } catch (error) {
     core.setFailed(error instanceof Error ? error.message : String(error));
   }
